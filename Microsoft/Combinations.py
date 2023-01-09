@@ -1,11 +1,7 @@
 class Solution:
-    def combine(self, N, K):
-        def dfs(first, combination):
-            if len(combination)==K:
-                result.append(combination)
-            else:
-                for num in range(first, N+1):
-                   dfs(num+1, combination+[num])
-        result=[]
-        dfs(1, [])
-        return result
+    def trailingZeroes(self, n: int) -> int:
+        res=0
+        while n>0:
+          n=n//5
+          res+=n
+        return res
