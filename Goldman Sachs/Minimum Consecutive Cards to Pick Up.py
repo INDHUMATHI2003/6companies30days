@@ -1,6 +1,7 @@
+import sys
 class Solution:
     def minimumCardPickup(self, cards: List[int]) -> int:
-        min=float('inf')
+        min=sys.maxsize
         map={}
         for i,val in enumerate(cards):
             if val in map:
@@ -8,8 +9,6 @@ class Solution:
                 if b<min:
                     min=b
             map[val]=i
-        if min==float('inf'):
+        if min==sys.maxsize:
             return -1
         return min
-
-            
