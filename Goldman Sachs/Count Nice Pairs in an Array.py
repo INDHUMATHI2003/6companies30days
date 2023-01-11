@@ -14,4 +14,3 @@ class Solution:
             else:
                 freq[s]=0
         return int(res%(1e9+7))
-Console
