@@ -20,10 +20,3 @@ class Solution:
             return (tot,cnt)
         traverse(root)
         return res
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
